@@ -1,0 +1,46 @@
+nav {
+  background-color: $primary;
+  height: 64px;
+  a {
+    font: 300 2em $font-stack;
+    margin-top: 0.25em;
+  }
+  ul {
+    li {
+      height: 64px;
+      &:hover {
+        background-color: lighten($primary, 20%)
+      }
+    }
+    li a {
+      font: 300 1.5em $font-stack;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.side-nav {
+  margin-right: 10%;
+}
+
+@media only screen and (min-width: 993px) {
+  .brand-logo {
+    margin-left: 10%;
+  }
+}
+
+.signin-dropdown {
+  padding: 1rem;
+  height: auto !important;
+}
+
+.at-btn {
+  background-color: $primary;
+  &:hover {
+    background-color: lighten($primary, 20%);
+  }
+}
+
+.at-title {
+  text-align: center;
+}

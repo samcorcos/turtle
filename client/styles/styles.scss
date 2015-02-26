@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+$font-stack: 'Open Sans', sans-serif;
+
+$primary: black;
+
+
+@import 'login';
+@import 'nav';
+@import 'footer';
+
+body, html {
+  font-family: $font-stack;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.shadow-inset {
+  -webkit-box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
+}
+
+.full-page {
+  min-height: 88vh;
+}
+
+/* @each \$classname in another-ny, blue-city {
+  .#{\$classname}-background {
+    background: url(/background/#{\$classname}.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 92vh;
+    width: 100%;
+    position: relative;
+  }
+} */
