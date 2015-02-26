@@ -1,18 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 $font-stack: 'Open Sans', sans-serif;
 
-$primary: black;
-
+$primary: #4BAE4B;
+$secondary: #388282;
+$tertiary: #A0865F;
 
 @import 'login';
 @import 'nav';
 @import 'footer';
+@import 'homepage';
+
+@each $classname, $color in (primary, #4BAE4B), (secondary, #388282), (tertiary, #D9965E) {
+  .#{$classname}-break {
+    height: 0.5rem;
+    background-color: #{$color};
+  }
+}
 
 body, html {
   font-family: $font-stack;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, .row, .col {
   margin: 0;
 }
 
@@ -26,9 +35,24 @@ h1, h2, h3, h4, p {
   min-height: 88vh;
 }
 
-/* @each \$classname in another-ny, blue-city {
-  .#{\$classname}-background {
-    background: url(/background/#{\$classname}.jpg) no-repeat center center;
+.card {
+  background-color: rgba(255,255,255,0.8);
+  .card-content {
+    text-align: center;
+    h2 {
+      font-size: 2.5em;
+      line-height: 1.1;
+      padding-bottom: 1rem;
+    }
+    p {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@each $classname in wiki-leatherback, turtle-baby, turtle-baby-2 {
+  .#{$classname}-background {
+    background: url(/backgrounds/#{$classname}.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,4 +61,4 @@ h1, h2, h3, h4, p {
     width: 100%;
     position: relative;
   }
-} */
+}
