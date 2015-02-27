@@ -37,7 +37,7 @@ h1, h2, h3, h4, p, .row, .col {
 }
 
 .card {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.85);
   .card-content {
     text-align: center;
     h2 {
@@ -52,6 +52,9 @@ h1, h2, h3, h4, p, .row, .col {
     img {
       max-width: 100%;
     }
+    a {
+      color: $secondary;
+    }
   }
 }
 
@@ -62,7 +65,7 @@ h1, h2, h3, h4, p, .row, .col {
   }
 }
 
-@each $classname in wiki-leatherback, turtle-baby, turtle-baby-2 {
+@each $classname in wiki-leatherback, turtle-baby, turtle-baby-2, students, person-turtle {
   .#{$classname}-background {
     background: url(/backgrounds/#{$classname}.jpg) no-repeat center center;
     -webkit-background-size: cover;
