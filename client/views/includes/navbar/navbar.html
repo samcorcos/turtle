@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo">
-        The Pacuare Nature Reserve
+        {{> turtleLogo}}
       </a>
       <ul id="nav-mobile" class="right side-nav">
         <li><a href="{{pathFor 'about'}}">The Reserve</a></li>
@@ -21,4 +21,27 @@
     {{> atForm}}
   </div>
 
+</template>
+
+
+<template name="turtleLogo">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 viewBox="-0.5 492.9 717 180.7" enable-background="new -0.5 492.9 717 180.7" xml:space="preserve">
+  <g id="Layer_2">
+  	<g>
+  		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M42.6,625.7c-2.3-6.9,1.8-12.9,1.8-19.3c0,0-4.4-3.7-6.4-6.4
+  			c-2.8,0-6.4-0.7-11.1-4.4c0,0-11.1,0.7-20.2-7.6c-13.6-7.6-2.5-12.5,1.8-14.4c4.4-4.7,12.9-6,19.3-6.9C34.1,561.5,40,563,40,563
+  			s0,0,4-5.6c-0.7-8.8,0,2.8-2.5-21.5c4.7-26.4,48.3-43.2,63.3-42.5c15.2,0.7,7.6,7.2,7.6,7.2l-42.2,35.9c0,0,65.2-9.7,113.7,22.4
+  			c5.7-4.7,14.4-11.6,17.6-10.4c3.2-3.2,17.3-14.8,23.7-9.7c0,0,7.2,2.1,2.5,10.1c0.4,6.9-5.7,12-5.7,12
+  			c-0.4,2.8-3.2,15.5-20.5,13.3c6.4,5,9.5,6.6,9.5,6.6s10.1,2.8,19.2-0.7c-6,6.9-5.6,9.7-25.6,10.1c-1.8,3.7-4,6-4,6
+  			c8.3,0,20.2-2.5,19.3,10.8c9.7,4,8.8,7.9,6.9,10.4c0,0,2.8,4.7,2.1,9.5c2.1,7.2-3.2,7.6-18,1.5c-9.7-11.1-25.6-16.3-25.6-16.3
+  			S132,640.3,74.7,632.1c0,0,10.4,5.6,13.3,9.5c6.9,0,11.6,7.9,11.6,7.9c11.1,5.1,15.5,11.6,15.5,11.6s13.6,6.9-0.4,7.9
+  			C101.3,668.3,57.3,669.3,42.6,625.7z"/>
+  	</g>
+
+  		<text transform="matrix(1 0 0 1 275.0845 592.181)" fill="#FFFFFF" font-family="'Noteworthy-Light'" font-size="92.755" letter-spacing="21">Pacuare</text>
+
+  		<text transform="matrix(1 0 0 1 275.0845 652.0733)" fill="#FFFFFF" font-family="'Noteworthy-Light'" font-size="49.945" letter-spacing="8">Nature Reserve</text>
+  </g>
+  </svg>
 </template>
