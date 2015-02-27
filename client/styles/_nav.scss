@@ -9,7 +9,7 @@ nav {
     li {
       height: 64px;
       &:hover {
-        background-color: lighten($primary, 20%)
+        background-color: lighten($primary, 10%)
       }
     }
     li a {
@@ -37,7 +37,7 @@ nav {
 .at-btn {
   background-color: $primary;
   &:hover {
-    background-color: lighten($primary, 20%);
+    background-color: lighten($primary, 10%);
   }
 }
 
